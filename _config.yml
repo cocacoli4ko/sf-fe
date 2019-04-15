@@ -1,0 +1,17 @@
+title: My Test Site
+email: nedko.ivanov@scalefocus.com
+description: Learning CSS & HTML
+baseurl: ""
+url: ""
+twitter_username:
+github_username:
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
