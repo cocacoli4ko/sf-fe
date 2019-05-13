@@ -8,20 +8,125 @@
   </head>
   <body>
 
+    
     <header>
-      <h1>{{ site.title }}</h1>
-      <p>{{ site.description }}</p>
 
       {% include navigation.html %}
       
+      <h1>{{ site.title }}</h1>
+      <p>{{ site.description }}</p>
+
+      
     </header>
 
-    <h1>{{ page.title }}</h1>
+    <div class="main-content">
+      
+      <h1>{{ page.title }}</h1>
 
-    {{ content }}
+      {{ content }}
+
+    </div>
 
     <footer>
-    
+      
+      <div class="footer-columns">
+        
+        <div class="footer-columns-social">
+
+          <p>In eu libero ligula. Fusce eget metus lorem, ac viverra leo. Nullam convallis, arcu vel pellentesque sodales, nisi est varius diam, ac ultrices sem ante quis sem. Proin ultricies volutpat sapien, nec scelerisque</p>
+
+        </div>
+
+        <div class="footer-columns-news">
+          
+          <h3>НОВИНИ</h3>
+
+          <div class="footer-columns-news-block">
+
+            <div class="footer-columns-news-block-item">
+
+              <div class="footer-columns-news-block-item-image">
+            
+                <img src="https://images.unsplash.com/photo-1486825586573-7131f7991bdd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80">
+
+              </div>
+
+              <span>
+                
+                <a href="#">Записването на час за изследвания - само онлайн</a>
+
+              </span>
+
+            </div>
+
+            <div class="footer-columns-news-block-item">
+            
+              <div class="footer-columns-news-block-item-image">
+            
+                <img src="https://images.unsplash.com/photo-1486825586573-7131f7991bdd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80">
+
+              </div>
+
+            </div>
+            
+          </div>
+
+        </div>
+
+        <div class="footer-columns-quicklinks">
+          
+          <h3>БЪРЗИ ВРЪЗКИ</h3>
+
+          <div class="footer-columns-quicklinks-block">
+
+            <div class="footer-columns-quicklinks-block-1">
+            
+              <ul>
+                <li>
+                  <a href="#">Начало</a>
+                </li>
+                <li>
+                  <a href="#">Регистрация</a>
+                </li>
+                <li>
+                  <a href="#">За нас</a>
+                </li>
+                <li>
+                  <a href="#">Контакт</a>
+                </li>
+              </ul>
+
+            </div>
+
+            <div class="footer-columns-quicklinks-block-2">
+            
+              <ul>
+                <li>
+                  <a href="#">Д-р Иванов</a>
+                </li>
+                <li>
+                  <a href="#">Д-р Петров</a>
+                </li>
+                <li>
+                  <a href="#">Д-р Димитров</a>
+                </li>
+                <li>
+                  <a href="#">Д-р Александров</a>
+                </li>
+              </ul>
+
+            </div>
+            
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="copy">
+        &copy МЦ "Медик" - всички права запазени
+      </div>
+
     </footer>
     
   </body>
