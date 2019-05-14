@@ -4,8 +4,17 @@
 /* Typography rules for entire site */
 @import 'typography';
 
+/* Logo */
+@import 'includes';
+
 /* Layout */
 @import 'layout';
 
 /* Main Navigation */
 @import 'navigation';
+
+// Appointment form
+@import 'form';
+
+/* Footer */
+@import 'footer';

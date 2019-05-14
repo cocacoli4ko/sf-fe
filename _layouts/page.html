@@ -5,129 +5,23 @@
     <meta name="viewport" content="width=device-width" />
     <title>{{ site.title }}</title>
     <link rel="stylesheet" href="/css/site.css" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
   </head>
   <body>
-
-    
-    <header>
-
+    <input type="checkbox" name="toggle-main-menu" id="toggle-main-menu" />
+    <header class="header-main">
+      {% include logo.html %}
       {% include navigation.html %}
-      
-      <h1>{{ site.title }}</h1>
-      <p>{{ site.description }}</p>
-
-      
+      {% include call-button.html %}
     </header>
-
     <div class="main-content">
-      
-      <h1>{{ page.title }}</h1>
 
       {{ content }}
 
     </div>
 
-    <footer>
-      
-      <div class="footer-columns">
-        
-        <div class="footer-columns-social">
-
-          <p>In eu libero ligula. Fusce eget metus lorem, ac viverra leo. Nullam convallis, arcu vel pellentesque sodales, nisi est varius diam, ac ultrices sem ante quis sem. Proin ultricies volutpat sapien, nec scelerisque</p>
-
-        </div>
-
-        <div class="footer-columns-news">
-          
-          <h3>НОВИНИ</h3>
-
-          <div class="footer-columns-news-block">
-
-            <div class="footer-columns-news-block-item">
-
-              <div class="footer-columns-news-block-item-image">
-            
-                <img src="https://images.unsplash.com/photo-1486825586573-7131f7991bdd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80">
-
-              </div>
-
-              <span>
-                
-                <a href="#">Записването на час за изследвания - само онлайн</a>
-
-              </span>
-
-            </div>
-
-            <div class="footer-columns-news-block-item">
-            
-              <div class="footer-columns-news-block-item-image">
-            
-                <img src="https://images.unsplash.com/photo-1486825586573-7131f7991bdd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80">
-
-              </div>
-
-            </div>
-            
-          </div>
-
-        </div>
-
-        <div class="footer-columns-quicklinks">
-          
-          <h3>БЪРЗИ ВРЪЗКИ</h3>
-
-          <div class="footer-columns-quicklinks-block">
-
-            <div class="footer-columns-quicklinks-block-1">
-            
-              <ul>
-                <li>
-                  <a href="#">Начало</a>
-                </li>
-                <li>
-                  <a href="#">Регистрация</a>
-                </li>
-                <li>
-                  <a href="#">За нас</a>
-                </li>
-                <li>
-                  <a href="#">Контакт</a>
-                </li>
-              </ul>
-
-            </div>
-
-            <div class="footer-columns-quicklinks-block-2">
-            
-              <ul>
-                <li>
-                  <a href="#">Д-р Иванов</a>
-                </li>
-                <li>
-                  <a href="#">Д-р Петров</a>
-                </li>
-                <li>
-                  <a href="#">Д-р Димитров</a>
-                </li>
-                <li>
-                  <a href="#">Д-р Александров</a>
-                </li>
-              </ul>
-
-            </div>
-            
-          </div>
-
-        </div>
-
-      </div>
-
-      <div class="copy">
-        &copy МЦ "Медик" - всички права запазени
-      </div>
-
-    </footer>
+    {% include footer.html %}
     
   </body>
 </html>
