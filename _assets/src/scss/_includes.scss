@@ -1,0 +1,90 @@
+// Logo CSS
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  color:inherit;
+
+  &-image {
+    color: #00b28a;
+    font-size: 3.5rem;
+  }
+
+  &-text {
+    margin-left: 0.5rem;
+    padding-left: 0.5rem;
+    font-size: 2.5rem;
+    align-self: center;
+    font-family: 'Poiret One', cursive;
+    border-left: 1px solid #666;
+  }
+}
+
+
+// Call Button CSS
+.call-button {
+  background-color: #00b28a;
+  padding: 1rem;
+  transition: background-color 0.4s ease-in;
+  text-decoration: none;
+  
+  &:hover {
+    background-color: #f66;
+  }
+  
+  &-text {
+    color: #fff;
+    font-weight: bold;
+    display: flex;
+  }
+
+  &-text:before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: '\f095';
+    display: block;
+    padding-right: 1rem;
+  }
+}
+
+// Appointment banner - CTA
+.cta {
+  background-color: #00b28a;
+  text-transform: uppercase;
+  color: #FFF;
+  padding: 4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  h1 {
+    font-family: 'Merriweather';
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  
+  a {
+    background-color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    color: #00b28a;
+    padding: 1rem 2rem;
+    transition: background-color 0.4s ease-in, color 0.4s ease-in;
+  }
+
+  a:hover {
+    background-color: #FF6666;
+    color: #fff;
+  }
+}
+
+@media (max-width: 840px)  {
+  
+  .call-button {
+    display: none;
+  }
+
+}
